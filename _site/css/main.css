@@ -1,4 +1,8 @@
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans;
 }
@@ -21,8 +25,12 @@ a {
 .header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 .header-logo {
+  left: -30px;
   background-color: #000;
   box-sizing: border-box;
   display: block;

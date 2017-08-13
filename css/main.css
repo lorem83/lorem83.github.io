@@ -31,6 +31,7 @@ h2 ~ p {
   text-align: center;
 }
 .content-container {
+  display: flex;
   flex: 1 1 auto;
   padding-top: 10vh;
   width: 100%;
@@ -118,6 +119,28 @@ h2 ~ p {
 }
 .footer-nav a {
   color: #ccc;
+}
+
+/* COLUMN STYLES */
+.col-three {
+  flex: 1;
+  display: flex;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em
 }
 
 /* HERO STYLES */
@@ -223,7 +246,7 @@ h2 ~ p {
   text-align: right;
   text-transform: uppercase;
 }
-.callout-copy {
+.callout-copy
   padding: 0 3vw;
   flex: 0 0 45em;
   font-size: 0.8rem;

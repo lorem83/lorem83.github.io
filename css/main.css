@@ -20,6 +20,7 @@ a {
   color: #6397b5;
 }
 p {
+  margin: 0.75em 0;
   line-height: 1.5;
 }
 h2 ~ p {
@@ -124,7 +125,7 @@ h2 ~ p {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 90vh;  
+  height: 90vh;
 }
 .full-hero:after {
   bottom: 2vh;
@@ -206,16 +207,27 @@ h2 ~ p {
   text-align: center;
 }
 .home-callout {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
   padding: 7vh 0;
 }
+.home-callout h3 {
+  color: inherit;
+  margin-top: 1em;
+}
 .callout-title {
+  flex-grow: 1;
+  flex-basis: 0;
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
+  padding: 0 3vw;
+  flex-shrink: 0;
+  flex-basis: 45em;
   font-size: 0.8rem;
 }
 

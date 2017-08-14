@@ -150,6 +150,7 @@ h2 ~ p {
 
 .col-two {
   display: flex;
+  
 }
 .col-two .col-aside {
   flex: 0 0 20em;

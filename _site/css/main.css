@@ -394,6 +394,10 @@ h2 ~ p {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+.home-section h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
 .home-callout {
   align-items: center;
   background-color: #000;
@@ -404,6 +408,13 @@ h2 ~ p {
 .home-callout h3 {
   color: inherit;
   margin-top: 1em;
+}
+.home-section .post-header {
+  text-align: center;
+}
+.home-section .blog-posts {
+  width: 75%;
+  margin: auto;
 }
 .callout-title {
   flex: 1 1 0;
@@ -451,4 +462,73 @@ h2 ~ p {
 }
 .bio-copy a {
   color: green;
+}
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+  /* HEADER STYLES */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+  /* HOME STYLES */
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+  /* GALLERY STYLES */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1 1 auto;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1 1 auto;
+  }
+  /* BLOG STYLES */
+  .blog-recent {
+    display: none;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
 }

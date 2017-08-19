@@ -198,6 +198,13 @@ h2 ~ p {
   padding-right: 0;
 }
 
+/* MOBILE MENU */
+
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
+
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
@@ -586,6 +593,64 @@ h2 ~ p {
   .header-logo {
     left: auto;
   }
+
+  /* MOBILE MENU */
+  .show-mobile-menu {
+     display: block;
+     float: right;
+     padding: 1.5em;
+     position: relative;
+     margin-top: 1.5vh
+   }
+   .header-nav {
+     background-color: #444;
+     box-sizing: border-box;
+     left: 0;
+     max-height: 0;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     text-align: center;
+     top: 10vh;
+     transition: all 0.5s ease-in-out;
+     width: 100vw;
+     z-index: 9;
+   }
+   .mobile-menu-check:checked ~ .header-nav {
+     max-height: 1000px;
+   }
+   .mobile-menu-check:checked ~ .show-mobile-menu:after {
+     background-color: #000;
+     color: #ed6e2f;
+     content: "CLOSE";
+     left: 0;
+     position: absolute;
+     top: 1.5em;
+     width: 100%;
+     text-align: center;
+   }
+   .header-nav li {
+     display: block;
+     margin-top: 1em;
+   }
+   .header-nav li:last-child {
+     margin-bottom: 1em;
+   }
+   .header-nav li:first-child a {
+     color: #fff;
+   }
+   .header-nav .drop-trigger {
+     padding-right: 0;
+   }
+   .header-nav .drop-menu:after,
+   .header-nav .drop-trigger:after {
+     display: none;
+   }
+   .header-nav > li ~ li a {
+    border-left: 0;
+    padding-left: 0;
+   }
+
   /* HOME STYLES */
   .bio-box {
     float: none;

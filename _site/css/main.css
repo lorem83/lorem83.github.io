@@ -4,7 +4,6 @@ html {
   padding: 0 30px;
 }
 body {
-  font-family: helvetica, arial, sans;
   display: flex;
   font-family: 'Open Sans', helvetica, arial, sans;
   flex-direction: column;
@@ -478,7 +477,7 @@ h2 ~ p {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  wik.5em;
+  width: 1.5em;
 }
 .social-link:hover,
 .social-link:active {
